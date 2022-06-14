@@ -1,0 +1,27 @@
+.Die {
+  font-size: 10em;
+  color: aquamarine;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.jiggle {
+  animation-duration: 250ms;
+  animation-name: jiggle;
+  animation-iteration-count: 3;
+}
+
+@keyframes jiggle {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-10px, 0);
+  }
+  60% {
+    transform: translate(10px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
